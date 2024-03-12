@@ -1,0 +1,15 @@
+!Preparar app para producción !
+
+  1) En nuestro package.json lo que de debemos es de cambiar dos scripts, 
+     el start y el start:prod a lo sig:
+     
+     - "start": "node dist/main"
+     - "start:prod": "nest start"
+     Esto porque por defecto los lugares donde se suben las app siempre usan
+     el comando start como el predefinido para hacer partir nuestra app.
+
+  2) Asegurarse que en nuestro punto de entrada de nuestra app main.ts,
+     estemos usando el puerto de la variable de entorno porque este es
+     EL PUERTO QUE NOS DAN LOS SERVICIOS EN LA NUBE.
+
+  3) Subir el proyecto a github
